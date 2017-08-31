@@ -1,2 +1,2 @@
 # DesignPattern
-design patterns implemented by Java
+Design patterns implemented with Java
