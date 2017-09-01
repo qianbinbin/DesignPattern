@@ -6,11 +6,6 @@ import io.binac.factory.IProduct;
 
 public class SimpleFactory {
 
-    enum ProductType {
-        TYPE_A,
-        TYPE_B
-    }
-
     public static IProduct createProduct(ProductType type) throws IllegalArgumentException {
         switch (type) {
             case TYPE_A:
@@ -20,5 +15,10 @@ public class SimpleFactory {
             default:
                 throw new IllegalArgumentException("undefined product type");
         }
+    }
+
+    enum ProductType {
+        TYPE_A,
+        TYPE_B
     }
 }
