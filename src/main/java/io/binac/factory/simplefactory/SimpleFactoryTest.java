@@ -5,7 +5,8 @@ import io.binac.factory.simplefactory.ConcreteSimpleFactory.ProductType;
 
 public class SimpleFactoryTest {
     public static void main(String[] args) {
-        IProduct product = ConcreteSimpleFactory.createProduct(ProductType.TYPE_A);
+        ProductType type = ProductType.TYPE_A;
+        IProduct product = ConcreteSimpleFactory.createProduct(type);
         product.use();
     }
 }
