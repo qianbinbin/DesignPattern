@@ -4,7 +4,7 @@ import io.binac.factory.ConcreteProductA;
 import io.binac.factory.ConcreteProductB;
 import io.binac.factory.IProduct;
 
-public class SimpleFactory {
+public class ConcreteSimpleFactory {
 
     public static IProduct createProduct(ProductType type) throws IllegalArgumentException {
         switch (type) {
